@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #212529;
+    color: white;
+    padding: 25px 60px;
+    margin-bottom: 30px;
+}
+
+.card {
+    position: relative;
+    background-color: white;
+    color: #212529;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+
+/* .card{
+   
+    background-color: white;
+    color: black;
+    font-size: 13px;
+    padding: 4px;
+} */
+.card_amount {
+    position: absolute;
+    top: -15px;
+    font-size: 25px;
+    right: -10px;
+    background-color: red;
+    border-radius: 4px;
+
+
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    gap: 30px;
+    justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    .shop {
+        grid-template-columns: repeat(2, 223px);
+    }
+}
+
+@media (max-width: 500px) {
+    .shop {
+        grid-template-columns: repeat(1, 223px);
+    }
+}
+
+.item {
+    border: 1px solid #212529;
+    border-radius: 4px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.price-quqntity {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    gap: 5px;
+    font-size: 20px;
+}
+
+.bi-dash:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.bi-plus:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.bi-cart-check:hover{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* rules for  cart page */
+
+.text-center{
+    text-align: center;
+    margin: 50px;
+}
+
+.homebtn ,.checkout ,.removeAll{
+    background-color: #212529;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 15px;
+     
+}
+
+.checkout{
+    background-color: green;
+}
+.removeAll{
+    background-color:  red;
+}
+
+.red:hover{
+    color: red;
+    cursor: pointer;
+}
+
+/* rule for card page(shoping card) items*/
+.shoping-cart{
+    display: grid;
+    grid-template-columns: repeat(1 , 320px);
+    justify-content: center;
+    gap: 15px;
+
+}
+
+/* rule for card page(card items) items*/
+
+.cart-items{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+}
+.title-price-x{
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 195px;
+}
+
+.title-price-x h4{
+
+    display: flex;
+        gap: 10px;
+}
+.title-price-x span{
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 4px;
+}
